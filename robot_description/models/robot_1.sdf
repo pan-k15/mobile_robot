@@ -1,0 +1,419 @@
+<sdf version='1.11'>
+  <model name='robot_1'>
+    <link name='base_footprint'>
+      <inertial>
+        <pose>0.018824701195219121 0 0.15824701195219129 0 0 0</pose>
+        <mass>1.2549999999999999</mass>
+        <inertia>
+          <ixx>0.010056756759628161</ixx>
+          <ixy>0</ixy>
+          <ixz>-0.00075016434262948229</ixz>
+          <iyy>0.01769991819389111</iyy>
+          <iyz>0</iyz>
+          <izz>0.020691588100929619</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_footprint_fixed_joint_lump__base_link_collision'>
+        <pose>0 0 0.14499999999999999 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.34999999999999998 0.27500000000000002 0.14999999999999999</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__camera_link_collision_1'>
+        <pose>0.17499999999999999 0 0.19 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.029999999999999999 0.124 0.029999999999999999</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__front_caster_wheel_link_collision_2'>
+        <pose>0.10249999999999999 0 0.072500000000000009 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.072500000000000009</radius>
+          </sphere>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.01</mu>
+              <mu2>0.01</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__laser_collision_3'>
+        <pose>0 0 0.23999999999999999 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.050000000000000003</length>
+            <radius>0.037499999999999999</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__rear_caster_wheel_link_collision_4'>
+        <pose>-0.10249999999999999 0 0.072500000000000009 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.072500000000000009</radius>
+          </sphere>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.01</mu>
+              <mu2>0.01</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='base_footprint_fixed_joint_lump__base_link_visual'>
+        <pose>0 0 0.14499999999999999 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.34999999999999998 0.27500000000000002 0.14999999999999999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.83920002 0.631399989 0 1</ambient>
+          <diffuse>0.83920002 0.631399989 0 1</diffuse>
+          <specular>0.99000001 0.99000001 0.99000001 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__camera_link_visual_1'>
+        <pose>0.17499999999999999 0 0.19 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.029999999999999999 0.124 0.029999999999999999</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.416000009 0.050999999 0.0469999984 1</ambient>
+          <diffuse>0.416000009 0.050999999 0.0469999984 1</diffuse>
+          <specular>0.416000009 0.050999999 0.0469999984 1</specular>
+          <emissive>0.416000009 0.050999999 0.0469999984 1</emissive>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__front_caster_wheel_link_visual_2'>
+        <pose>0.10249999999999999 0 0.072500000000000009 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.072500000000000009</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__laser_visual_3'>
+        <pose>0 0 0.23999999999999999 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.050000000000000003</length>
+            <radius>0.037499999999999999</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.00300000003 0.638999999 0.223000005 1</ambient>
+          <diffuse>0.00300000003 0.638999999 0.223000005 1</diffuse>
+          <specular>0.00300000003 0.638999999 0.223000005 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__rear_caster_wheel_link_visual_4'>
+        <pose>-0.10249999999999999 0 0.072500000000000009 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.072500000000000009</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <diffuse>0 0 0 1</diffuse>
+          <ambient>0 0 0 1</ambient>
+        </material>
+      </visual>
+      <sensor name='camera' type='rgbd_camera'>
+        <topic>camera</topic>
+        <update_rate>30</update_rate>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <camera>
+          <optical_frame_id>camera_depth_link</optical_frame_id>
+          <horizontal_fov>1.50098</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.29999999999999999</near>
+            <far>100</far>
+          </clip>
+        </camera>
+        <pose>0.17499999999999999 0 0.19 0 0 0</pose>
+        <gz_frame_id>camera_link</gz_frame_id>
+      </sensor>
+      <sensor name='imu_sensor' type='imu'>
+        <topic>imu/data</topic>
+        <update_rate>50</update_rate>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <pose>0 0 0.14499999999999999 0 0 0</pose>
+        <gz_frame_id>imu_link</gz_frame_id>
+        <imu/>
+      </sensor>
+      <sensor name='gpu_lidar' type='gpu_lidar'>
+        <topic>scan</topic>
+        <update_rate>10</update_rate>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <lidar>
+          <scan>
+            <horizontal>
+              <samples>360</samples>
+              <resolution>1</resolution>
+              <min_angle>-3.1415999999999999</min_angle>
+              <max_angle>3.1415999999999999</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>1</samples>
+              <resolution>1</resolution>
+              <min_angle>0</min_angle>
+              <max_angle>0</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.080000000000000002</min>
+            <max>12</max>
+            <resolution>0.01</resolution>
+          </range>
+        </lidar>
+        <pose>0 0 0.26500000000000001 0 0 0</pose>
+        <gz_frame_id>laser</gz_frame_id>
+      </sensor>
+    </link>
+    <joint name='left_wheel_joint' type='revolute'>
+      <pose relative_to='base_footprint'>0 0.14000000000000001 0.045000000000000012 0 0 0</pose>
+      <parent>base_footprint</parent>
+      <child>left_wheel_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='left_wheel_link'>
+      <pose relative_to='left_wheel_joint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.10000000000000001</mass>
+        <inertia>
+          <ixx>8.1000000000000017e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>8.1000000000000017e-05</iyy>
+          <iyz>0</iyz>
+          <izz>8.1000000000000017e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='left_wheel_link_collision'>
+        <pose>0 0 0 1.5707963267948959 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.050000000000000003</length>
+            <radius>0.044999999999999998</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='left_wheel_link_visual'>
+        <pose>0 0 0 1.5707963267948959 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.050000000000000003</length>
+            <radius>0.044999999999999998</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.176400006 0.458799988 0.850899994 1</ambient>
+          <diffuse>0.176400006 0.458799988 0.850899994 1</diffuse>
+          <specular>0.176400006 0.458799988 0.850899994 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <joint name='right_wheel_joint' type='revolute'>
+      <pose relative_to='base_footprint'>0 -0.14000000000000001 0.045000000000000012 0 0 0</pose>
+      <parent>base_footprint</parent>
+      <child>right_wheel_link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='right_wheel_link'>
+      <pose relative_to='right_wheel_joint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.10000000000000001</mass>
+        <inertia>
+          <ixx>8.1000000000000017e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>8.1000000000000017e-05</iyy>
+          <iyz>0</iyz>
+          <izz>8.1000000000000017e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='right_wheel_link_collision'>
+        <pose>0 0 0 1.5707963267948959 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.050000000000000003</length>
+            <radius>0.044999999999999998</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='right_wheel_link_visual'>
+        <pose>0 0 0 1.5707963267948959 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.050000000000000003</length>
+            <radius>0.044999999999999998</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.176400006 0.458799988 0.850899994 1</ambient>
+          <diffuse>0.176400006 0.458799988 0.850899994 1</diffuse>
+          <specular>0.176400006 0.458799988 0.850899994 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+    <plugin name='gz::sim::systems::Sensors' filename='gz-sim-sensors-system'>
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin name='gz::sim::systems::Imu' filename='gz-sim-imu-system'/>
+    <plugin name='gz::sim::systems::DiffDrive' filename='gz-sim-diff-drive-system'>
+      <topic>cmd_vel</topic>
+      <child_frame_id>base_footprint</child_frame_id>
+      <odom_topic>odom/unfiltered</odom_topic>
+      <left_joint>left_wheel_joint</left_joint>
+      <right_joint>right_wheel_joint</right_joint>
+      <wheel_separation>0.28</wheel_separation>
+      <wheel_radius>0.045</wheel_radius>
+      <odom_publish_frequency>50</odom_publish_frequency>
+    </plugin>
+    <plugin name='gz::sim::systems::JointStatePublisher' filename='gz-sim-joint-state-publisher-system'>
+      <topic>joint_states</topic>
+      <update_rate>50</update_rate>
+      <joint_name>left_wheel_joint</joint_name>
+      <joint_name>right_wheel_joint</joint_name>
+    </plugin>
+    <frame name='camera_depth_joint' attached_to='camera_link'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='camera_depth_link' attached_to='camera_depth_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='camera_to_base_link' attached_to='base_link'>
+      <pose>0.17499999999999999 0 0.044999999999999998 0 0 0</pose>
+    </frame>
+    <frame name='camera_link' attached_to='camera_to_base_link'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='front_caster_wheel_joint' attached_to='base_link'>
+      <pose>0.10249999999999999 0 -0.072500000000000009 0 0 0</pose>
+    </frame>
+    <frame name='front_caster_wheel_link' attached_to='front_caster_wheel_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='imu_to_base_link' attached_to='base_link'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='imu_link' attached_to='imu_to_base_link'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='laser_to_base_link' attached_to='base_link'>
+      <pose>0 0 0.12 0 0 0</pose>
+    </frame>
+    <frame name='laser' attached_to='laser_to_base_link'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='rear_caster_wheel_joint' attached_to='base_link'>
+      <pose>-0.10249999999999999 0 -0.072500000000000009 0 0 0</pose>
+    </frame>
+    <frame name='rear_caster_wheel_link' attached_to='rear_caster_wheel_joint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='base_to_footprint' attached_to='base_footprint'>
+      <pose>0 0 0.14499999999999999 0 0 0</pose>
+    </frame>
+    <frame name='base_link' attached_to='base_to_footprint'>
+      <pose>0 0 0 0 0 0</pose>
+    </frame>
+  </model>
+</sdf>
